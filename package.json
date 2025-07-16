@@ -1,0 +1,30 @@
+{
+  "name": "fcm-notification-server",
+  "version": "1.0.0",
+  "description": "A simple server to send FCM notifications using Firebase Admin SDK",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "fcm",
+    "firebase",
+    "express",
+    "notifications"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
