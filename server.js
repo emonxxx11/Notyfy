@@ -1,6 +1,13 @@
 import express from 'express';
 import admin from 'firebase-admin';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+if (!process.env.FIREBASE_SERVICE_ACCOUNT) {
+  throw new Error('Missing FIREBASE_SERVICE_ACCOUNT in environment variables');
+}
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
